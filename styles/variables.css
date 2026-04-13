@@ -1,1 +1,37 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: "Inter", sans-serif;
+  --accent-font: "PressStart2P", fantasy;
+  --main-weight-text: 410;
+  --card-weight-text: 400;
+  --title-weight-text: 715;
+
+  --main-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --main-width-block: clamp(375px, 260.56px + 30.52vw, 700px);
+  --logo-title-text: clamp(14px, calc(0.85vw + 11px), 23px);
+  --header-padding-block: clamp(122px, 119.18px + 0.75vw, 130px);
+  --card-text-padding: 25px;
+  --card-content-padding: clamp(23px, 22.65px + 0.09vw, 24px);
+  --card-title-padding-block: clamp(4px, 3.3px + 0.19vw, 6px);
+  --card-buttons-offset-top: clamp(2px, 1.65px + 0.09vw, 3px);
+  --color-text-shadow: #fff;
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
+
+  --background-image:
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(#e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+}
