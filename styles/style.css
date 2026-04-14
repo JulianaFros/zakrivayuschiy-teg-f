@@ -103,7 +103,7 @@
     right: 25px;
     color: var(--contour-color);
     text-transform: uppercase;
-    font-family: var(--accent-font), 'fantasy';
+    font-family: var(--accent-font), fantasy;
     font-size: 14px;
     opacity: 0.5;
     text-shadow: 0 0 1px var(--color-text-shadow);
@@ -141,6 +141,8 @@
     inline-size: 39px;
     block-size: 38px;
     border: 2px solid transparent;
+    background-color: transparent;
+    transition: border 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -149,7 +151,6 @@
 
 .card__icon-button:focus-visible {
     border: 2px solid var(--contour-color);
-    transition: border 0.3s ease;
 }
 
 
@@ -160,40 +161,34 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-family: var(--accent-font), 'fantasy';
+    font-family: var(--accent-font), fantasy;
     font-size: 14px;
     border: 2px solid var(--contour-color);
     background-color: #fff;
     color: #fff;
-    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease;
-    transform: scaleX(1);
+    transition: box-shadow 0.3s ease;
     transform-origin: left;
-}
-
-.button:hover {
-    color: #fff;
 }
 
 .button:hover::before {
     transform: scaleX(1);
+    transition: transform 0.5s ease-in-out;
+    color: #fff;
 }
 
-.button:focus {
+.button:focus-visible {
     box-shadow: 2px 2px 0 0px var(--contour-color);
-    transition: box-shadow 0.3s ease;
 }
 
 .button__text {
     position: relative;
     color: #fff;
     mix-blend-mode: difference;
-    transition: color 0.5s ease-in-out;
     z-index: 2;
 }
 
 .card__like-button {
     inline-size: 130px;
-    transition: box-shadow 0.3s ease;
 }
 
 .save-button {
@@ -231,7 +226,6 @@
 .save-button__text {
     position: relative;
     mix-blend-mode: difference;
-    transition: color 0.5s ease-in-out;
     color: #fff;
     z-index: 1;
 }
@@ -244,7 +238,6 @@
     color: #fff;
     fill: currentColor;
     mix-blend-mode: difference;
-    transition: color 0.5s ease-in-out;
     z-index: 1;
 }
 
@@ -286,7 +279,6 @@
     position: relative;
     color: #fff;
     mix-blend-mode: difference;
-    transition: color 0.5s ease-in-out;
 }
 
 .filter-blur-saturate {
