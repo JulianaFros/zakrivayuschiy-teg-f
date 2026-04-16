@@ -171,13 +171,8 @@
     transform-origin: left;
 }
 
-.button:hover {
-    transition: transform 0.5s ease-in-out;
-}
-
 .button:hover::before {
     transform: scaleX(1);
-    mix-blend-mode: difference;
 }
 
 .button:focus-visible {
